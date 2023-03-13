@@ -1,0 +1,57 @@
+When implementing a service, I would suggest to add these below things to deliver a quality code.
+Quality code leads to Quality Product.
+
+Practices to be followed 
+
+1. Logging 
+Loggers are much required to check,
+a. understand the code flow during debug
+b. the value is empty or not (null check)
+c. check if any exceptions are thrown to understand the code failure etc
+
+2. Documentation / Versioning
+a. Implement the Swagger in the application with the details of the Application and rest endpoint
+b. Update the details of the application in the wiki in the Github to know details on the application
+
+3.Junits / SonarQube check
+a. Junits are implemented for the test code coverage inorder to work on the code coverage for the entire application.
+b. SonarQube / SonarLint can be implemented for the application to check the code coverage for the application.
+c. Run the maven command for test coverage to check the code report coverage, this helps the team to check how quality
+code is and how much of the test cases pass.
+b. TDD approach can be considered for this implementation
+
+4. CI/CD and Devops
+a. Implementing the CI/CD practices helps the application to be continously deployed and integrated to the master 
+branch which keeps the application updated and sent to the prod environment after the stage testing and delivered to the market.
+b. Jenkins job is commonly used for Backend application to deploy and build the code.
+c. Devops - Cloud based deployement are part of the CI/CD practices to be considered
+
+5. Data integrity and Fault handling
+a. Data intergrity plays a major role in Physical intergrity and Logical Integrity. Secure server and licenses applications to be used
+inorder to prevent from Fradulent/hacking. 
+b. Alternative arrangements for Natural disaster, Storage corrosion and Functional disruption to be taken care.
+
+6. Github
+a. It is one of the best way to Commit the code using github, the creation of branches from master can be done and every developer can create their
+own fork from the branch and commit into that. Having a peer review with the team member/lead and then committing the code leads to good practices and
+better quality of code.
+b. It is easy to check who has committed the changes and check with the user about it anytime.
+
+7. Automation
+a. Using TDD approach, automation is now widely used to make the testing easier instead of manual. Implementing Automation scripts for the application 
+is the major practices used.
+
+8. Code Refatoring
+a. Refactoring the code is important to deliver a quality product and easy to understand the code and flow without much complexity. 
+b. Fixing Sonar vulnerabilities, Method complexities, loggers, junits, method comments etc to implement while refactoring the code. 
+c. Individual Applicaton.properties for all environments (local, dev, qa, staging, prod etc) to be implemented to run the application in specifix environments.
+d. Swagger.yml properties implementation and to be frequently updated based on the new changes in the code implementation.
+f. Code structure and dependency injections for Security, Junit - Mockito, database etc to be taken care while implementing.
+g. Implement try and catch blocks wherever necessary to handle the exceptions as exception handling is a key part
+
+9. Code Quality
+a. Implementing JUnits for code coverage
+b. SOnar Qube/Lint to check the vulnerabilities and check it
+c. Code Review before committing the code
+d. End to end testing
+e. Automation

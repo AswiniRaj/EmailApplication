@@ -1,0 +1,19 @@
+#Server port details swagger
+spring.application.name: demoservice
+spring.server.port: 8080
+
+#Host and Mail Details
+
+spring.mail.host = smtp.gmail.com
+spring.mail.username = foo@gmail.com
+spring.mail.password = secret
+
+#Below Properties are needed for maintaining the session.
+
+spring.mail.smtp.auth = true
+spring.mail.smtp.socketFactory.port = 465
+spring.mail.smtp.socketFactory.class = javax.net.ssl.SSLSocketFactory
+spring.mail.smtp.socketFactory.fallback = false
+
+#logging file name
+logging.file.name=emailApplication.log

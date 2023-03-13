@@ -1,0 +1,49 @@
+package com.SpringBootEmail.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+ 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+ 
+public class EmailDetails {
+ 
+    private String address;
+    private String subject;
+    private String content;
+}
+
+//Implement getters and setters for the data members
+
+    public String getAddress()   
+    {  
+        return address;  
+    }  
+
+    public void setAddress(final String address)   
+    {  
+        this.address = address;  
+    } 
+
+    public String getSubject()   
+    {  
+        return subject;  
+    }  
+
+    public void setSubject(final String subject)   
+    {  
+        this.subject = subject;  
+    }  
+
+    public String getContent()   
+    {  
+        return content;  
+    }  
+
+    public void setContent(final String content)   
+    {  
+        this.content = content;  
+    }   
+
